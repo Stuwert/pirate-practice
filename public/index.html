@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='pirates'>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
     <title>Bing Bong</title>
   </head>
-  <body>
+  <body ng-controller='PiratesController'>
     <h1>Is this a test?</h1>
-
+    <p>
+      Angular works: {{test}}
+    </p>
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <span class="glyphicon glyphicon-cloud"></span>
+        </a>
+      </div>
+    </div>
+  </nav>
 
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" charset="utf-8"></script>
     <script src="/js/app.js" charset="utf-8"></script>
+    <script src="/js/controllers.js" charset="utf-8"></script>
+    <script src="/js/services.js" charset="utf-8"></script>
   </body>
 </html>
