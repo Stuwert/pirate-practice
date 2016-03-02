@@ -1,0 +1,12 @@
+<form name='createPirateForm' ng-submit='createPirateForm.$valid && createPirate()' novalidate>
+  <h4>Make a Pirate</h4>
+  <label for="">Name</label>
+  <input ng-model='$parent.newPirate.name' type="text" name="name" value="" required>
+  <label for="">Poison</label>
+  <input ng-model='$parent.newPirate.poison' type="text" name="poison" value="" required>
+  <label for="">Accessory</label>
+  <input ng-model='$parent.newPirate.accessory' type="text" name="accessory" value="" required>
+  <label for="">Image Link</label>
+  <input ng-model='$parent.newPirate.image_url' type="text" name="image_url" value="" required>
+  <button type="submit" name="button">Create Pirate</button>
+</form>
